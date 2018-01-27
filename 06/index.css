@@ -4,4 +4,61 @@
 }
 html,body{
     background-color: #c0c0c0;
+    font-family: "Microsoft YaHei" ;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.container{
+    width: 892px;
+    margin: 50px auto;
+    padding: 0 44px;
+    background-color: #ffffff;
+}
+header{
+    position: relative;
+    font-family: "SimHei";
+    border-bottom: 2px solid #938e8c;
+    margin-bottom: 35px;
+}
+header .logo{
+    width: 110px;
+    height: 61px;
+    background-color: #d45d5c;
+    color: #ffffff;
+    position: relative;
+}
+.logo p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
+}
+.time{
+    color: #d45d5c;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+.session1{
+    height: 301px;
+}
+.one-left{
+    position: relative;
+}
+.one-left img{
+    display: block;
+}
+.one-img-left,.one-img-right{
+    width: 191px;
+    height: 301px;
+    position: absolute;
+    top: 0;
+}
+.one-img-left{
+    left: 0;  
+    background-color: rgba(66, 140, 89, .5)
+}
+.one-img-right{
+    right: 0;
+    background-color: rgba(204, 118, 128, .5)  
 }
