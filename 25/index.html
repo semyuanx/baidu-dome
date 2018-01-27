@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            cursor: pointer;
+        }
+
+        li:after {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: -10px;
+            width: 0;
+            height: 0;
+            border: 4px solid transparent;
+            border-left-color: #000000;
+        }
+        li>ul{
+            display: none
+        }
+        li.on>ul{
+            display: block;
+        }
+        li.on::after{
+            top: 10px;
+            border-top-color: #000000;
+            border-left-color: transparent;
+        }
+        li.noAfter::after{
+            display: none;
+        }
+        i{
+            display: none;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 5px;
+            background-color: #333333;
+            color: #ffffff;
+            padding: 0 5px;
+        }
+        span:hover i{
+            display: inline-block;           
+        }
+        i:hover{
+            background-color: #666666;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="tree">
+        <li >
+            <span>1级 <i>+</i><i>-</i></span>
+            <ul>
+                <li>
+                    <span>1-1级<i>+</i><i>-</i></span>
+                </li>
+                <li>
+                    <span>1-2级<i>+</i><i>-</i></span>
+                </li>
+                <li>
+                    <span>1-3级<i>+</i><i>-</i></span>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span>2级<i>+</i><i>-</i></span>
+            <ul >
+                <li>
+                    <span>2-1级<i>+</i><i>-</i></span>
+                    <ul>
+                        <li>
+                            <span>2-1-1级<i>+</i><i>-</i></span>
+                        </li>
+                        <li>
+                            <span>2-1-2级<i>+</i><i>-</i></span>
+                            <ul>
+                                <li>
+                                    <span>2-1-1级<i>+</i><i>-</i></span>
+                                </li>
+                                <li>
+                                    <span>2-1-2级<i>+</i><i>-</i></span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span>2-2级<i>+</i><i>-</i></span>
+                </li>
+                <li>
+                    <span>2-3级<i>+</i><i>-</i></span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <fieldset id = "from">
+        <input type="text" id="input" placeholder="搜索">
+        <button id="searchBtn">确定</button>
+        <p id="num"></p>
+    </fieldset>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.container div{
+    border: 1px solid #666666;
+}
+.left{
+    float: left;
+    width: 200px;
+    background-color: blanchedalmond;  
+}
+.right{
+    float: right;
+    width: 200px;
+    margin-left: -100%;
+    background-color: blanchedalmond;  
+}
+.main{
+    height: 200px;
+    margin: 10px 220px;
+    background-color: red;
+}
+.container{
+    border: 1px solid #000000;
+    padding: 10px;
+    background-color: aqua;
+}
+.left1{
+    float: left;
+    width: 200px;
+    margin-left: -100%;
+}
+.right1{
+    width: 120px;
+    float: right;
+    margin-left: -120px;
+}
+.main1{
+    float: left;
+    width: 100%;
+}

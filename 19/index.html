@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .show-arr {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .show-arr li {
+            float: left;
+            margin-right: 5px;
+            line-height: 50px;
+            width: 20px;
+            text-align: center;
+            background-color: red;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-grop">
+        <input id="inputVal" type="text" placeholder="请输入一个整数">
+        <button id="leftInto">左侧入</button>
+        <button id="rightInto">右侧入</button>
+        <button id="leftOut">左侧出</button>
+        <button id="rightOut">右侧出</button>
+        <button id="mess">打乱</button>
+        <button id="bubbling">冒泡</button>
+        <button id="quick">快速</button>
+        <button id="insert">插入排序</button>
+    </div>
+    <ul id="showArr" class="show-arr">
+    </ul>
+    <script src="./index.js"></script>
+    <input type="text" id="input">
+    <p onselect="alert('You have selected some of the text.')">我是文本！</p>
+
+    <form onsubmit ="sub(event)" >
+        <input type="submit" value="提交" />
+    </form>
+    <div id="div1" style="width:100px;height:100px;background:red">
+        <div id="div2" style="width:50px;height:50px;background:#000"></div>
+    </div>
+    <iframe id="iframe" onload = "test()" src="http://game.pttab.com"></iframe>
+</body>
+<script>
+    document.domain = "http://game.pttab.com";
+    function test(){
+        alert(document.getElementById("iframe").contentWindow)
+    }
+    
+</script>
+</html>

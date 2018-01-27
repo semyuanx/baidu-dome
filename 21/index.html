@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        ul::after{
+            content: " ";
+            clear: both;
+            display: block;
+        }
+        li{
+            float: left;
+            margin-right: 10px;
+            background:#333333;
+            padding: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+        li:hover{
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="tag1">
+        <label>Tag:</label>
+        <input id="tagInput" type="text" placeholder="我是tag">
+        <ul id="ul1">
+            <li>HTML5</li>
+        </ul>
+    </div>
+    <div class="tag2">
+        <textarea id="hobbyTextarea" cols="30" rows="10"></textarea>
+        <button id="subBtn">确定兴趣爱好</button>
+        <ul id="ul2">
+            <li>篮球</li>
+        </ul>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

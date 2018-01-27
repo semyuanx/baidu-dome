@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .root {
+            width: 900px;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        div {
+            border: 1px solid #000;
+            flex: 1;
+            margin: 20px;
+            background: #fff;
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="root" id="root">
+        <div class="child1">
+            <div class="child1-left">
+                <div class="child1-left-left"></div>
+                <div class="child1-left-right"></div>
+            </div>
+            <div class="child1-right">
+                <div class="child1-right-left"></div>
+                <div class="child1-right-right"></div>
+            </div>
+        </div>
+
+        <div class="child2">
+            <div class="child2-left">
+                <div class="child2-left-left"></div>
+                <div class="child2-left-right"></div>
+            </div>
+            <div class="child2-right">
+                <div class="child2-right-left"></div>
+                <div class="child2-right-right"></div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:center;border:0;width:900px">
+        <button id="front">前序</button>
+        <button id="centre">中序</button>
+        <button id="rear">后序</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

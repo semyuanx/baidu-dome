@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        ul li{
+            float: left;
+            margin-right: 10px;
+            background-color: red;
+            color: #fff;
+        }
+        ul li span{
+            background-color: yellow;
+            color: #000;
+        }
+        ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="textarea" cols="30" rows="10"></textarea>
+    <button id="inserBtn">插入</button>
+    <button id="queryBtn">查询</button>
+    <input type="text" id="input" placeholder="输入您要查询的字符串">
+    <ul id="arrList">
+    </ul>
+    <script src="./index.js"></script>
+</body>
+</html>

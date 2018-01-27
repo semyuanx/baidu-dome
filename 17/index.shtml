@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+    <script src="task.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <fieldset id="form-gra-time">
+        <legend>请选择日期粒度：</legend>
+        <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
+        <label>周<input name="gra-time" value="week" type="radio"></label>
+        <label>月<input name="gra-time" value="month" type="radio"></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>请选择查看的城市：</legend>
+        <select id="city-select">
+            <option>北京</option>
+        </select>
+    </fieldset>
+
+    <div class="aqi-chart-wrap">
+        <!-- 横 纵 坐标轴 -->
+        <div class="axis">
+            <div class="axis-y">
+                <span></span>
+                <div>1000</div>
+                <div>900</div>
+                <div>800</div>
+                <div>700</div>
+                <div>600</div>
+                <div>500</div>
+                <div>400</div>
+                <div>300</div>
+                <div>200</div>
+                <div>100</div>
+                <div>0</div>
+            </div>
+            <div class="axis-x">
+
+            </div>
+
+            <!--  柱状图容器  -->
+            <div id="histogram" class="histogram">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #root{
+            width: 1000px;
+            height: 300px;
+        }
+        div{
+            display: flex;
+            flex: 1;
+            border: 1px solid #000;
+            margin: 15px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        最外层
+        <div>
+            左外
+            <div>
+                左内左
+            </div>
+            <div>
+                左内右
+            </div>
+        </div>
+        <div>
+            中外
+            <div>
+                中内左
+            </div>
+            <div>
+                中内右
+            </div>
+        </div>
+        <div>
+            右外
+            <div>
+                右内左
+            </div>
+            <div>
+                右内右
+            </div>
+        </div>
+    </div>
+    <fieldset style="width:990px;">
+        <button id="delBtn">删除</button>
+        <input type="text" id="input" placeholder="输入要添加的内容">
+        <button id="addBtn">添加</button><br><br>
+        <input type="text" id="search" placeholder="请输入要搜索的内容">
+        <button id="searchBtn">搜索</button>
+    </fieldset>
+    <script src="./index.js"></script>
+</body>
+</html>

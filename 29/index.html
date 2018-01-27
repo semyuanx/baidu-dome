@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input{
+            outline: none;
+            border-radius: 5px;
+            border-width: 1px;
+            outline: none;
+            margin-left: 15px;
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 0 5px;
+            box-shadow: 0;
+        }
+        .input{
+            position: relative;
+            margin: 20px 0 30px;
+        }        
+        .hint{
+            position: absolute;            
+            font-size: 12px;
+            line-height: 1.5;
+            left: 50px;
+        }
+        .input.error input{
+            border-color: red;           
+        }
+        .input.error .hint{
+            color: red;
+        }
+        .input.success input{
+            border-color: green;           
+        }
+        .input.success .hint{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="input">
+            <label for="title">名称</label>
+            <input name="title" type="text" id="title">
+            <button>验证</button>
+            <div class="hint">必填，长度为4~16个字符</div>
+        </div>
+        <div class="input">
+            <label for="name">名称</label>
+            <input name="name" type="text" id="name">
+            <button>验证</button>
+            <div class="hint">必填，长度为4~16个字符</div>
+        </div>
+        <div class="input">
+            <label for="nam1">名称</label>
+            <input name="name1" type="text" id="name1">
+            <button>验证</button>
+            <div class="hint">必填，长度为4~16个字符</div>
+        </div>
+    </form>
+    <script>
+        (function(){
+            // 策略类
+            var rule = {
+                name:function(value){
+                    var rexg = /\w/;
+                    return  rexg.test(value);
+                },
+                title: function(value){
+                    var rexg = /(\w)+/;
+                    return  rexg.test(value);
+                },
+                name2: function(value){
+                    var rexg = /\w/;
+                    return  rexg.test(value);
+                }
+            } 
+
+            // 验证类
+            var checkInput = function(id){
+                var dom = document.getElementById(id);
+                return rule[id]();
+            }; 
+
+            // 修改样式
+            var changeView = function(state){
+                switch(state){
+                    case 'success':
+                        break;
+                    case 'error':
+                        break;
+                    case 'define':
+                        break;
+                }
+            } 
+
+            checkInput('title');
+
+        })()
+    </script>
+</body>
+</html>
