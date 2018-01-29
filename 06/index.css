@@ -1,64 +1,409 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html,body{
+
+.clear {
+    clear: both;
+    height: 0;
+    zoom: 1;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
     background-color: #c0c0c0;
-    font-family: "Microsoft YaHei" ;
+    font-family: "Microsoft YaHei";
     font-size: 12px;
     line-height: 1.5;
 }
-.container{
+
+.container {
     width: 892px;
     margin: 50px auto;
     padding: 0 44px;
     background-color: #ffffff;
 }
-header{
+
+header {
     position: relative;
     font-family: "SimHei";
     border-bottom: 2px solid #938e8c;
     margin-bottom: 35px;
 }
-header .logo{
+
+header .logo {
     width: 110px;
     height: 61px;
     background-color: #d45d5c;
     color: #ffffff;
     position: relative;
 }
-.logo p{
+
+.logo p {
     position: absolute;
     bottom: 0;
     left: 0;
-   
 }
-.time{
+
+.time {
     color: #d45d5c;
     position: absolute;
     right: 0;
     bottom: 5px;
 }
-.session1{
-    height: 301px;
+
+.one {
+    margin-bottom: 50px;
 }
-.one-left{
+
+.one-left {
     position: relative;
+    margin-right: 250px;
 }
-.one-left img{
+
+.one-left-head {
+    margin-bottom: 30px;
+}
+
+.one-left img {
     display: block;
 }
-.one-img-left,.one-img-right{
+
+.one-img-left,
+.one-img-right {
     width: 191px;
     height: 301px;
     position: absolute;
     top: 0;
 }
-.one-img-left{
-    left: 0;  
+
+.one-img-left {
+    left: 0;
     background-color: rgba(66, 140, 89, .5)
 }
-.one-img-right{
+
+.one-img-right {
     right: 0;
-    background-color: rgba(204, 118, 128, .5)  
+    background-color: rgba(204, 118, 128, .5)
+}
+
+.one-right {
+    float: right;
+    padding-top: 10px;
+    width: 203px;
+    height: 290px;
+    border-top: 2px solid #cc8091;
+    position: relative;
+}
+
+.one-right h3 {
+    font-size: 24px;
+    color: #000;
+    font-family: "微软雅黑";
+    line-height: 1.2;
+    text-decoration: underline;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.one-right .about {
+    font-family: '楷体';
+    font-size: 12px;
+    font-style: italic;
+    color: #676767;
+}
+
+.one-right .num {
+    font-size: 116px;
+    color: #75b86b;
+    font-style: italic;
+    line-height: 1;
+    position: absolute;
+    left: -15px;
+    bottom: 80px;
+}
+
+.text1,
+.text2,
+.text3 {
+    color: #cc8091;
+    position: absolute;
+}
+
+.text1 {
+    font-size: 55px;
+    bottom: 0px;
+    left: 0;
+    line-height: 1;
+}
+
+.text2 {
+    font-size: 21px;
+    bottom: 10px;
+    left: 85px;
+}
+
+.text3 {
+    font-size: 12px;
+    bottom: 0;
+    left: 85px;
+}
+
+.what {
+    float: left;
+    width: 225px;
+}
+
+.how {
+    float: right;
+    width: 150px;
+}
+
+.when {
+    margin-left: 255px;
+    margin-right: 180px;
+}
+
+.one-left h3 {
+    font-size: 16px;
+    text-decoration: underline;
+    line-height: 2;
+}
+
+.what h3 {
+    color: #418c59;
+}
+
+.when h3 {
+    color: #d2994f;
+}
+
+.how h3 {
+    color: #cc7680;
+}
+
+.how ul {
+    font-size: 12px;
+    color: #231815;
+    margin-top: 15px;
+}
+
+.how span {
+    color: #cd4a48;
+    opacity: .7;
+}
+
+.two {
+    padding-bottom: 40px;
+}
+
+.two-right {
+    width: 458px;
+    float: right;
+}
+
+.two-left {
+    margin-right: 478px;
+}
+
+.two-left-head {
+    font-family: '黑体';
+    color: #11456b;
+    border-bottom: 2px solid #11456b;
+    margin-bottom: 20px;
+}
+
+.two-left-head h3 {
+    font-size: 42px;
+    line-height: 1;
+}
+
+.two-left-head h3 i {
+    font-size: 72px;
+    color: #f5e327;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.two-left-head h4 {
+    font-size: 33px;
+}
+
+.two-left-main p {
+    text-indent: 2em;
+    color: #767777;
+    font-family: '宋体';
+}
+
+.two-left-main p.first {
+    text-indent: 0;
+}
+
+.two-left-main p.first span {
+    text-indent: 0;
+    float: left;
+    font-size: 70px;
+    color: #f5e327;
+    line-height: 1;
+    margin: 0 5px 5px 0;
+}
+
+.two-left-main img {
+    float: right;
+    padding: 10px;
+    width: 226px;
+    height: 300px;
+    display: block;
+}
+
+.two-img {
+    position: relative;
+}
+
+.two-img img {
+    display: block;
+}
+
+.two-img-text {
+    position: absolute;
+    width: 100%;
+    height: 61px;
+    background-color: rgba(4, 0, 0, 0.4);
+    bottom: 0;
+}
+
+.two-img-text h3 {
+    font-size: 26px;
+    color: #ffffff;
+    line-height: 44px;
+    margin-left: 40px;
+    border-left: 3px solid #72b16a;
+    padding-left: 10px;
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.two-img-text h3 i {
+    color: #72b16a;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.two-right-text {
+    margin-top: 30px;
+    background-color: #eeedd6;
+    position: relative;
+}
+
+.two-right-text ul {
+    margin: 30px;
+}
+
+.two-right-text li {
+    font-size: 16px;
+    color: #5a5b5b;
+    line-height: 40px;
+    position: relative;
+    padding: 0 50px 0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.two-right-text li i {
+    border-width: 5px;
+    border-color: transparent transparent #10446b transparent;
+    border-style: solid;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+
+.two-right-text li span {
+    position: absolute;
+    right: 20px;
+    font-family: '宋体';
+    font-size: 12px;
+    font-style: italic;
+    color: #5a5b5b;
+}
+
+.two-right-left {
+    width: 230px;
+    height: 80px;
+    padding: 35px 15px;
+    background-color: #d45d5c;
+    position: absolute;
+    bottom: 0;
+}
+
+.two-zero-left {
+    position: absolute;
+    top: 20px;
+    font-size: 110px;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.two-zero-right{
+    margin-left: 65px;
+    padding-left: 5px;
+    height: 86px;
+    border-left: 2px #ffffff solid;
+    color: #ffffff;  
+    font-family: '黑体';
+}
+
+.two-zero-right .first{
+    font-size: 21px;
+    line-height: 1.2;
+     
+    font-style: italic;
+}
+.two-right-right{
+    margin-left: 280px;
+}
+.two-zero-right p{
+    word-wrap: break-word;   
+}
+.two-right-right{
+    position: relative;
+    font-size: 14px;
+    color: #5a5b5b;
+    text-indent: 2em;
+}
+.two-right-right span{
+    font: 72px "黑体";
+    color: #d45d5c;   
+    text-indent: 0;  
+}
+.mark-left{ 
+    position: absolute;
+    left: -43px;
+    top: -15px;
+    vertical-align: text-bottom;
+}
+.mark-right{
+    display: inline-block;
+    vertical-align: text-top;
+    width: 30px;
+    height: 30px;
+}
+footer{
+    height: 60px;
+    border-top: 1px solid #938e8c;
+    position: relative;
+}
+footer p{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    color: #d45d5c;
 }
